@@ -37,7 +37,7 @@ O **Mimo AI Proxy** não é apenas uma camada de tradução; é um gateway compl
    XIAOMI_CHATBOT_PHS="ph1,ph2"
    
    # Segurança e Rede:
-   PORT=3000
+   PORT=3005
    API_KEY="sua_chave_secreta"
    CORS_ORIGIN="*"
    ```
@@ -57,7 +57,7 @@ go run main.go
 
 ### Exemplo de Integração
 ```bash
-curl http://localhost:3000/v1/chat/completions \
+curl http://localhost:3005/v1/chat/completions \
   -H "Authorization: Bearer sua_chave" \
   -d '{
     "model": "mimo-v2.5-pro",

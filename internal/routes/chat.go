@@ -391,6 +391,7 @@ func handleChatCompletions(c *gin.Context) {
 	}
 
 	if err = c.ShouldBindJSON(&input); err != nil {
+		fmt.Printf("ShouldBindJSON error: %v | body was: %s\n", err, string(bodyCopy))
 		utils.SendError(c, http.StatusBadRequest, "Invalid request body", "invalid_request_error", nil)
 		return
 	}

@@ -38,6 +38,6 @@ COPY --from=builder /app/templates ./templates
 # Copy .env.example as template if needed, though we expect .env to be mounted
 COPY .env.example .env
 
-EXPOSE 3000
+EXPOSE 3005
 
 CMD ["./mimoproxy"]

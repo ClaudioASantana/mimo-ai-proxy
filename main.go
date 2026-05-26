@@ -159,7 +159,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "3000"
+		port = "3005"
 	}
 
 	// For Docker environments, it's safer to bind to 0.0.0.0 explicitly
